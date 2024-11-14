@@ -8,7 +8,7 @@ import requests
 # Download a file from Github
 url = "https://raw.githubusercontent.com/AmitSharma8/Principal-component-analysis/main/pca_2d_data.csv"
 response = requests.get(url)
-output_path = "pca_2d_data.csv" # local file path
+output_path = "pca_2d_data.csv"        # local file path
 with open(output_path, "wb") as file:  # Write the content to a local file
     file.write(response.content)
     
